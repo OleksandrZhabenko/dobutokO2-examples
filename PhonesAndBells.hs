@@ -1,3 +1,14 @@
+import DobutokO.Sound
+import DobutokO.Sound.Executable
+import DobutokO.Sound.Functional
+import DobutokO.Sound.Keyboard
+import System.Process
+import qualified Data.Vector as V 
+import EndOfExe (showE)
+
+
+
+
 testSoundGen2G :: FilePath -> (Double -> OvertonesO) -> Double -> String -> IO ()
                               ----------------------                        
   --                                    f
