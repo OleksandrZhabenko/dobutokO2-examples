@@ -9,16 +9,17 @@ import EndOfExe (showE)
 testSoundGen2G :: FilePath -> (Double -> OvertonesO) -> Double -> String -> IO ()
                               ----------------------                        
   --                                    f
+-- Since dobutokO2-0.33.0.0 the following is valid.  
 testSoundGen2G file f y zs = do
-  vecA0 <- fmap (V.map (\t -> quotRem t 108)) (readFileDoubles file) -- >>= print
+  vecA0 <- fmap (V.map (`quotRem` 108)) (readFileDoubles file) -- >>= print
   let n = V.length vecA0
       freq0 j = V.unsafeIndex notes (snd . V.unsafeIndex vecA0 $ j `rem` n)
-      f0 t = V.fromList [(0.05763181818181818 * t, 0.3598),(1.112159090909091 * t, 0.4588962),(1.8076136363636364 * t, 0.6853)]
-      fA1 j = fAddFElem (freq0 (j + 1),0.5) (freq0 j) f0 gAdd04 
-      fR1 j = fRemoveFElem (freq0 (j + 1),0.5) (freq0 j) f0 gRem03
+      f0 t = V.fromList [(0.05763181818181818 * t, 0.3598),(1.112159090909091 * t, 0.4588962),(2 * t, 0.6853),(3 * t, 0.268),(4 * t, 0.6823),(5 * t, 0.53)]
+      fA1 j = fAddFElem (freq0 (j + 1),0.5) f0 gAdd04 
+      fR1 j = fRemoveFElem (freq0 (j + 1),0.5) f0 gRem03
       vecB = V.imap (\j r -> (V.unsafeIndex notes (snd r),
        case fst r of
-         0 -> (\vv -> f0 vv)
+         0 -> f0
          1 -> fA1 j
          2 -> fA1 j
          3 -> fA1 j
