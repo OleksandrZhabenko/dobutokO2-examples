@@ -1,6 +1,6 @@
 -- since version 0.38.1.0
 
--- see the resulting file: https://soundcloud.com/oleksandr343/electroniccranest2s14142t14
+-- see the resulting file: https://soundcloud.com/oleksandrzhabenko/electroniccranest2s14142t14
 
 import DobutokO.Sound
 import DobutokO.Sound.Functional
