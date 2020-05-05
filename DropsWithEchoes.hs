@@ -1,6 +1,6 @@
 -- since the version 0.38.1.0
 
--- the generated file is here: https://soundcloud.com/oleksandr343/dropswithechoes
+-- the generated file is here: https://soundcloud.com/oleksandrzhabenko/dropswithechoes
 
 import DobutokO.Sound
 import DobutokO.Sound.Functional
