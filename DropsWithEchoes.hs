@@ -2,6 +2,8 @@
 
 -- the generated file is here: https://soundcloud.com/oleksandrzhabenko/dropswithechoes
 
+-- the generated file with another after-processing with SoX effects is here: https://soundcloud.com/oleksandrzhabenko/hard-rhythms-dobutoko2
+
 import DobutokO.Sound
 import DobutokO.Sound.Functional
 import Data.Vector
