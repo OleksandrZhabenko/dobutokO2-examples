@@ -10,7 +10,7 @@
 --      "0.25", "2", "-t", "60", "0.32", "0.4", "1.3", "-s", "speed", "0.7", "reverb", "-w", "20", "vol", "2", "tempo", "1.3", 
 --           "reverb", "1", "vol", "3"]
 
--- The resulting file is here: 
+-- The resulting file is here: https://soundcloud.com/oleksandrzhabenko/unexpected-instruments-virtualized
 
 
 import DobutokO.Sound
