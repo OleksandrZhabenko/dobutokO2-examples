@@ -6,9 +6,11 @@
 -- and then in the terminal:
 -- sox New3.flac ~/UnexpectedInstrumentsVirtualized.flac tempo 1.45 reverb chorus 0.6 0.9 50 0.4 0.25 2 -t 60 0.32 0.4 1.3 -s speed 0.7 reverb -w 20 vol 2 tempo 1.3 reverb 1 vol 3
 -- or in the GHCi equivalently:
--- soxE "New3.flac" ["~/UnexpectedInstrumentsVirtualized.flac", "tempo", "1.45", "reverb", "chorus", "0.6", "0.9", "50", "0.4", 
---      "0.25", "2", "-t", "60", "0.32", "0.4", "1.3", "-s", "speed", "0.7", "reverb", "-w", "20", "vol", "2", "tempo", "1.3", 
---           "reverb", "1", "vol", "3"]
+--    soxE "New3.flac" ["tempo", "1.45", "reverb", "chorus", 
+--      "0.6", "0.9", "50", "0.4", "0.25", "2", "-t", "60", "0.32", "0.4", 
+--         "1.3", "-s", "speed", "0.7", "reverb", "-w", "20", "vol", "2", 
+--             "tempo", "1.3", "reverb", "1", "vol", "3"]
+--   renameFile "New3.flac" "UnexpectedInstrumentsVirtualized.flac"
 
 -- The resulting file is here: https://soundcloud.com/oleksandrzhabenko/unexpected-instruments-virtualized
 
