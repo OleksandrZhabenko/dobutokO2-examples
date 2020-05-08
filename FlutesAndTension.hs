@@ -4,6 +4,8 @@
 -- in GHCi: soxREA1 30 25 30 100 0 6 1 "221w" "result" "New.flac"
 -- then in the terminal: sox New.flac ~/FlutesAndTension.flac speed 1.57 reverb -w 80 speed 1.3 vol 1.5
 
+-- the result is here: https://soundcloud.com/oleksandrzhabenko/flutes-and-tension-dobutoko2
+
 import DobutokO.Sound
 import DobutokO.Sound.Functional
 import Data.Vector
