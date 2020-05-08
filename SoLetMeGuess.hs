@@ -7,6 +7,8 @@
 -- soxE2C "end.wav" ["reverb", "-w", "1", "speed", "0.8", "tempo", "1.8", "reverb", "10", "vol", "0.45", "reverb", "1", "reverb", "-w", "30", "vol", "3"]
 -- renameFile "end.flac" "SoLetMeGuess.flac"
 
+-- the resulting file is here: https://soundcloud.com/oleksandrzhabenko/so-let-me-guess
+
 import DobutokO.Sound
 import DobutokO.Sound.Functional
 import Data.Vector
