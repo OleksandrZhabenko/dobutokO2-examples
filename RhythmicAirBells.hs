@@ -13,7 +13,7 @@ import Data.Maybe (fromJust)
 
 main = do 
   mapM_ (\z -> do 
-    overMeloPar (\t -> V.fromList [(t,1.0),(2 * t, 0.79),(3 * t,0.68),(4*t,0.57),(5*t,0.46),(6*t,0.35),(7*t,0.24),(8*t,0.13),(9*t,0.02)]) (\t -> abs (cos (pi / t))) (P2s 70 12 "Ukrainian Dorian scale") 3.141592  440.0 z ; 
+    overMeloPar (\t -> V.fromList [(t,1.0),(2 * t, 0.79),(3 * t,0.68),(4*t,0.57),(5*t,0.46),(6*t,0.35),(7*t,0.24),(8*t,0.13),(9*t,0.02)]) (\t -> abs (cos (pi / t))) (P2s 70 12 "Ukrainian Dorian scale") 3.141592  440.0 z 
     playA "result*wav" 
     dir <- listVDirectory 
     V.mapM_ (\file -> renameFile file $ show z ++ "." ++ file) dir) [220,330,440,550,660,770,880,110]
