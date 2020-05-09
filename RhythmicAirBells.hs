@@ -1,6 +1,6 @@
 -- since the version 0.39.0.1
 
--- the resulting file can be found here: 
+-- the resulting file can be found here: https://soundcloud.com/oleksandrzhabenko/rhythmic-air-bells
 
 import qualified Data.Vector as V
 import DobutokO.Sound.Functional (Params (..),overMeloPar)
